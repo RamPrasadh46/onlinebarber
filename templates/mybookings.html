@@ -1,0 +1,89 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% extends "headerfooter.html" %}
+
+{% block content %}
+	        
+<!-- breadcrumb -->
+	<div class="w3_breadcrumb">
+	<div class="breadcrumb-inner">	
+			<ul>
+				<li><a href="/">Home</a> <i>//</i></li>
+				
+				<li>My Bookings</li>
+			</ul>
+		</div>
+	</div>
+<!-- //breadcrumb -->
+			<!--/content-inner-section-->
+				  <div class="w3_content_agilleinfo_inner">
+					    <div class="container">
+							<div class="title-agileits">
+                            <h2 class="w3l-agile">My Bookings</h2> 
+			             </div>
+									<div class="w3_mail_grids">
+										<form action="" method="post" enctype="multipart/form-data">
+											{% csrf_token %}
+
+											<table width="100%" border="1">
+<tr>
+    
+    <th>username</th>
+    <th>barbername</th>
+    <th>time</th>   
+    <th>date</th>
+    <th>Status</th>
+
+
+    
+</tr>
+
+{% for x in data %}
+<tr>
+    
+    <td>{{x.username.name}}</td>
+    <td>{{x.barbername.name}}</td>
+
+    <td>{{x.time}}</td>
+    <td>{{x.date}}</td>
+    <td>{{x.status}}</td>
+
+    <!-- {% if x.status == "Approved" %} -->
+
+    <!-- <td><a href="/cancel/?fid={{x.id}}">Cancel</a></td> -->
+    <!-- {% else %} -->
+
+
+  <!-- <td><a href="/approve/?fid={{x.id}}">Approve</a></td> -->
+  
+
+<!-- {% endif %} -->
+    
+</tr>
+{% endfor %}
+</table>
+								</select>
+							</div>
+						</div>
+											<div class="col-md-6 w3_agile_mail_grid">
+												<!-- <textarea name="Message" placeholder="Your Message" required=""></textarea>
+												<input type="password" name="password" placeholder="Password" required="">
+												<br></br>
+												<input type="file" name="fileupload" placeholder="fileupload" id="file" required="">
+
+
+												<input type="submit" value="Submit">
+											</div> -->
+											<div class="clearfix"> </div>
+										</form>
+							</div>
+					   </div>
+							<div class=" map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12947831.742778081!2d-95.665!3d37.599999999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1422444552833"></iframe>
+							</div>
+				  </div>
+{% endblock %}

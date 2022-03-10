@@ -1,0 +1,148 @@
+
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% extends "headerfooter.html" %}
+
+{% block content %}
+    <!-- breadcrumb -->
+	<div class="w3_breadcrumb">
+	<div class="breadcrumb-inner">	
+			<ul>
+				<li><a href="index.html">Home</a> <i>//</i></li>
+				<li>Booking</li>
+			</ul>
+		</div>
+	</div>
+<!-- //breadcrumb -->
+			<!--/content-inner-section-->
+				<div class="w3_content_agilleinfo_inner">
+					<div class="container">
+					     <div class="title-agileits">
+                            <h2 class="w3l-agile">Book Your Saloon</h2> 
+			             </div>
+				    <div class="gallery-grids">
+
+
+				    	{% for x in data %}
+					<div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/contact/?bid={{x.id}}" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="{{x.Image.url}}" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>	
+								</a>
+							</figure>
+						</div>
+					</div>
+					{% endfor %}
+					<!-- <div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/a.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>	
+								</a>
+							</figure>
+						</div>
+					</div> -->
+					<!-- <div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/ap.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>		
+								</a>
+							</figure>
+						</div>
+					</div> -->
+					<!-- <div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/contact/" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/rmp.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>	
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/ras.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>	
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g6.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/ind.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>		
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/nature.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>	
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/lyfstyle.jpg" alt="" />
+									<figcaption>
+										<p>Hair Salon</p>
+									</figcaption>	
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="/static/images/g3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor. Cras euismod egestas enim eget molestie. Aenean ornare condimentum odio, in lacinia felis finibus non. Nam faucibus libero et lectus finibus, sed porttitor velit pellentesque.">
+									<img src="/static/images/g3.jpg" alt="" />
+									<figcaption>
+									<p>Hair Salon</p>
+									</figcaption>		
+								</a>
+							</figure>
+						</div>
+					</div> -->
+					<div class="clearfix"> </div>
+					
+			</div>
+
+	</div>
+</div>
+			<!--//content-inner-section-->
+{% endblock %}
+ 
